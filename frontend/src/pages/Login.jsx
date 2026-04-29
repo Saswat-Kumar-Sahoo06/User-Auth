@@ -32,7 +32,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        'http://localhost:8000/api/v1/users/login',
+        'https://user-auth-virid.vercel.app/api/v1/users/login',
         loginInfo,
         { withCredentials: true }
       );
