@@ -31,7 +31,7 @@ const Signup = () => {
     }
 
     try {
-      const response = await axios.post("http://localhost:8000/api/v1/users/register", signupInfo)
+      const response = await axios.post("https://user-auth-virid.vercel.app/v1/users/register", signupInfo)
       console.log(response.data)
       const { success, message, error } = response.data
       if (success) {
