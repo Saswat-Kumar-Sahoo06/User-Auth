@@ -42,7 +42,7 @@ const Signup = () => {
       }
 
     } catch (error) {
-      const message = error.response?.data?.message || "User already existed";
+      const message = error.response?.data?.message || "User already existed or something went wrong";
       handleError(message)
 
     }
